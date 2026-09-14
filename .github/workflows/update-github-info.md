@@ -1,7 +1,6 @@
 ---
 name: update-github-info
 description: Keep the GitHub Info page current with useful GitHub Blog and Changelog updates.
-model: gpt-4o
 on:
   schedule: daily
   workflow_dispatch:
@@ -10,6 +9,7 @@ permissions:
   contents: read
 
 engine: copilot
+model: gpt-4o
 
 tools:
   github:
