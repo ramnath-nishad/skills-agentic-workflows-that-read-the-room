@@ -8,6 +8,9 @@ on:
 permissions:
   contents: read
 
+engine: copilot
+model: gpt-4o
+
 tools:
   github:
     toolsets: [repos]
@@ -37,8 +40,8 @@ Use the web-fetch tool to read:
 - https://github.blog/changelog/
 - https://awesome-copilot.github.com/workflows/
 
-Select concise, practical updates that help developers learn GitHub faster. Mention the source whenever an update comes from the GitHub Blog or GitHub Changelog. Use the GitHub repository API tool to learn more about it if needed.
+Select concise, practical updates that help developers learn GitHub faster. Mention the source whenever an update comes from the GitHub Blog or GitHub Changelog. Use the GitHub repository API tool to get information about the repo.
 
 Update `site/content/github-info.md` only when there is a worthwhile, accurate update. Preserve the file's existing structure and writing style, and keep the summaries short.
 
-When changes are needed, use the edit tool to make them and request the `create-pull-request` safe output. Open a pull request for Mona to review; do not write directly to the default branch. Include links to the sources you used.
+When changes are needed, use the edit tool to make them and request the `create-pull-request` safe output. Open a pull request for Mona to review; do not write directly to the default branch.
