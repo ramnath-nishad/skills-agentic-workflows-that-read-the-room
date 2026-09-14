@@ -10,7 +10,6 @@ permissions:
   contents: read
 
 engine: copilot
-model: gpt-4o
 
 tools:
   github:
